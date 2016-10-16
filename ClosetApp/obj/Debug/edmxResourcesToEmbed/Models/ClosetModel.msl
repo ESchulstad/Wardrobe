@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClosetAppModelStoreContainer" CdmEntityContainer="ClosetAppEntities">
+    <EntitySetMapping Name="Accessories">
+      <EntityTypeMapping TypeName="ClosetAppModel.Accessory">
+        <MappingFragment StoreEntitySet="Accessories">
+          <ScalarProperty Name="AccessoryID" ColumnName="AccessoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="OccasionID" ColumnName="OccasionID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bottoms">
+      <EntityTypeMapping TypeName="ClosetAppModel.Bottom">
+        <MappingFragment StoreEntitySet="Bottoms">
+          <ScalarProperty Name="BottomID" ColumnName="BottomID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="OccasionID" ColumnName="OccasionID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Occasions">
+      <EntityTypeMapping TypeName="ClosetAppModel.Occasion">
+        <MappingFragment StoreEntitySet="Occasion">
+          <ScalarProperty Name="OccasionID" ColumnName="OccasionID" />
+          <ScalarProperty Name="OccasionName" ColumnName="OccasionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Outfits">
+      <EntityTypeMapping TypeName="ClosetAppModel.Outfit">
+        <MappingFragment StoreEntitySet="Outfits">
+          <ScalarProperty Name="OutfitID" ColumnName="OutfitID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TopID" ColumnName="TopID" />
+          <ScalarProperty Name="BottomID" ColumnName="BottomID" />
+          <ScalarProperty Name="ShoeID" ColumnName="ShoeID" />
+          <ScalarProperty Name="AccessoryID" ColumnName="AccessoryID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seasons">
+      <EntityTypeMapping TypeName="ClosetAppModel.Season">
+        <MappingFragment StoreEntitySet="Season">
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="SeasonName" ColumnName="SeasonName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shoes">
+      <EntityTypeMapping TypeName="ClosetAppModel.Sho">
+        <MappingFragment StoreEntitySet="Shoes">
+          <ScalarProperty Name="ShoeID" ColumnName="ShoeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="OccasionID" ColumnName="OccasionID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tops">
+      <EntityTypeMapping TypeName="ClosetAppModel.Top">
+        <MappingFragment StoreEntitySet="Tops">
+          <ScalarProperty Name="TopID" ColumnName="TopID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="SeasonID" ColumnName="SeasonID" />
+          <ScalarProperty Name="OccasionID" ColumnName="OccasionID" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

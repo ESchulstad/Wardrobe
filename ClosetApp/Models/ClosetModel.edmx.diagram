@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df575185b3a04394b38d67056a2bf753" Name="Diagram1">
+        <EntityTypeShape EntityType="ClosetAppModel.Accessory" Width="1.5" PointX="6.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Bottom" Width="1.5" PointX="2.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Occasion" Width="1.5" PointX="6.375" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Outfit" Width="1.5" PointX="4.625" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Season" Width="1.5" PointX="2.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Sho" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ClosetAppModel.Top" Width="1.5" PointX="8.25" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="ClosetAppModel.FK_Accessories_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Accessories_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Outfits_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Bottoms_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Bottoms_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Outfits_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Shoes_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Tops_Occasion" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Outfits_Shoes" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Outfits_Tops" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Shoes_Season" ManuallyRouted="false" />
+        <AssociationConnector Association="ClosetAppModel.FK_Tops_Season" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
