@@ -4,63 +4,35 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<body class="accessorydetail">
 
-<div>
-    <h4>Accessory</h4>
+    <h2 class="itemstitle">Details</h2>
+
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="media">
+                <img class="image-responsive" src="~/Content/@Model.Photo" alt="A Top">
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+                <div class="media-body">
+                    <h4 class="media-heading">@Html.DisplayFor(model => model.Name)</h4>
+                    <p>@Html.DisplayFor(model => model.Type)</p>
+                    <p>@Html.DisplayFor(model => model.Color)</p>
+                    <p>Occasion: @Html.DisplayFor(model => model.Occasion.OccasionName)</p>
+                    <p>Season: @Html.DisplayFor(model => model.Season.SeasonName)</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
+    <p class="bottombtn">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID })
+        <br />
+        @Html.ActionLink("Back to List", "Index")
+    </p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+</body>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.SeasonName)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

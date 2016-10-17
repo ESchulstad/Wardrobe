@@ -22,3 +22,170 @@ select,
 textarea {
     max-width: 280px;
 }
+.thumbnail > img{
+    height:300px;
+}
+
+.navbar-inverse .navbar-nav > li >a{
+    color:#ffffb3;
+    border:solid;
+    border-color:rgba(198, 140, 83,.75);
+    
+    border-radius:50%;
+    margin:5px;
+    font-weight:bold;
+    
+}
+.navbar-inverse{
+    background:none;
+    border-color:none;
+    border-bottom:none;
+}
+.navbar-inverse .navbar-nav > li >a:hover{
+    color:white;
+    background-color:#ff0066;
+    border:none;
+}
+.navbar-inverse .navbar-brand{
+    color:white;
+    background-color:#ff0066;
+    border-radius:50%;
+    margin: 5px;
+}
+.navbar-inverse .navbar-brand:hover{
+    color:#ff0066;
+    background-color:rgb(179,255,179);
+}
+.jumbotron{
+    background:none;
+    padding-right:0;
+    padding-left:0;
+}
+h1.title{
+    text-align:center;
+    color:#ffcc00;
+    font-size:145px;
+    font-family:'Petit Formal Script', cursive;
+    font-weight:800;
+    text-shadow:5px 5px #27190c;
+}
+.homepage {
+    background-image: url('Images/clothespicture.jpg');
+    background-size:cover;
+    
+}
+h2 a{
+    color:white;
+    font-family:'Petit Formal Script',cursive;
+    font-weight:800;
+    font-size:43px;
+}
+h2 a:hover{
+    color:rgb(179,255,179)
+}
+.links{
+    text-align:center;
+}
+.foot{
+    color:#ff0066;
+}
+footer{
+    margin-top:50px;
+}
+.itemsbody {
+    background-image: url('Images/wood.jpg');
+    background-size:cover;
+}
+.itemstitle{
+    font-family:'Petit Formal Script','cursive';
+    color:#ffaa00;
+    font-size:60px;
+    font-weight:500;
+    text-shadow:2px 2px #b34700;
+    margin-bottom:30px;
+    margin-top:30px;
+
+}
+p a{
+    font-family:'Petit Formal Script',cursive;
+    font-size:28px;
+    color:#ffffb3;
+    font-weight:bold;
+}
+p a:hover{
+    color:#ff0066;
+    text-decoration:none;
+}
+.thumbnail{
+    border: solid rgb(179,255,179) 5px;
+    border-radius:25px;
+    margin-top: 5px;
+    margin-bottom:15px;
+    background-color:burlywood;
+}
+hr{
+    border-color: rgb(179,255,179);
+
+}
+.itemname{
+    text-align:center;
+    color:#ff0066;
+    font-weight:bold;
+    font-family:'Abril Fatface',cursive;
+    padding-bottom:10px;
+}
+.btn-default{
+    background-color:#ff0066;
+    border-color:#ff0066;
+    color:white;
+}
+.btn-default:hover{
+    color:white;
+    background-color:#e6005c;
+    border-color:#e6005c;
+}
+.buttons{
+    text-align:center;
+}
+.topdetail {
+    background-image: url('Images/sweaters.jpg');
+    background-size:cover;
+}
+.media{
+    background-color:rgba(198,140,83,.75);
+    border-radius:25px;
+}
+div.media img{
+    text-align:center;
+    padding:20px;
+    max-width:350px;
+}
+.media-body{
+    text-align:center;
+    font-family:'Amita','cursive';
+    font-weight:bold;
+    color:#ffffb3;
+    font-size:25px;
+}
+.media-heading{
+    font-family:'Amita',cursive;
+    font-weight:bold;
+    font-size:35px;
+    padding:10px;
+    color:#ff0066;
+}
+.bottombtn{
+    padding-top:25px;
+}
+.shoedetail {
+    background-image: url('Images/bootsbackground.jpg');
+    background-size:cover;
+}
+.bottomdetail {
+    background-image: url('Images/vintagepants.jpg');
+    background-size:cover;
+}
+.accessorydetail {
+    background-image: url('Images/glasses.jpeg');
+    background-size:cover;
+}

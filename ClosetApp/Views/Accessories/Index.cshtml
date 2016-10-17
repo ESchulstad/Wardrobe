@@ -1,63 +1,64 @@
 ﻿@model IEnumerable<ClosetApp.Models.Accessory>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Accessories";
 }
+<body class="itemsbody">
+    <h2 class="itemstitle">MY ACCESSORIES</h2>
 
-<h2>Index</h2>
+    <p>
+        @Html.ActionLink("ADD AN ACCESSORY", "Create")
+    </p>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </th>
-        <th></th>
-    </tr>
+    <div class="row">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Photo)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Occasion.OccasionName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.SeasonName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.AccessoryID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.AccessoryID })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model)
+        {
 
-</table>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/@item.Photo" alt="An Accessory" />
+                    <div class="caption">
+                        <hr />
+                        <h3 class="itemname">@Html.DisplayFor(modelItem => item.Name)</h3>
+
+                        <p class="buttons">
+                            @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }, new { @class = "btn btn-default" })
+                            @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }, new { @class = "btn btn-warning" })
+
+                            @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID }, new { @class = "btn btn-default" })
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+        }
+    </div>
+
+</body>
+
+@*@Html.DisplayFor(modelItem => item.Type)
+
+@Html.DisplayFor(modelItem => item.Color)
+
+@Html.DisplayFor(modelItem => item.Photo)
+
+@Html.DisplayFor(modelItem => item.Occasion.OccasionName)
+
+@Html.DisplayFor(modelItem => item.Season.SeasonName)
+
+
+
+@Html.DisplayNameFor(model => model.Name)
+
+@Html.DisplayNameFor(model => model.Type)
+
+@Html.DisplayNameFor(model => model.Color)
+
+@Html.DisplayNameFor(model => model.Photo)
+
+@Html.DisplayNameFor(model => model.Occasion.OccasionName)
+
+@Html.DisplayNameFor(model => model.Season.SeasonName)*@

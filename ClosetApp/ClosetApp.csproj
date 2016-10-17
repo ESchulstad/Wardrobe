@@ -208,12 +208,33 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\beanie.jpg" />
+    <Content Include="Content\boots.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\brownhat.jpg" />
     <Content Include="Content\buttonuptop.jpg" />
+    <Content Include="Content\goldheels.jpg" />
+    <Content Include="Content\Images\bootsbackground.jpg" />
+    <Content Include="Content\Images\clothespicture.jpg" />
+    <Content Include="Content\Images\glasses.jpeg" />
+    <Content Include="Content\Images\maxresdefault.jpg" />
+    <Content Include="Content\Images\sweaters.jpg" />
+    <Content Include="Content\Images\vintagepants.jpg" />
+    <Content Include="Content\Images\wood.jpg" />
+    <Content Include="Content\jeans.jpg" />
+    <Content Include="Content\leafnecklace.jpg" />
+    <Content Include="Content\leggings.jpg" />
+    <Content Include="Content\pencilskirt.jpg" />
+    <Content Include="Content\sandals.jpg" />
+    <Content Include="Content\scarf.jpg" />
+    <Content Include="Content\sequinedskirt.jpg" />
     <Content Include="Content\sequinedtop.jpg" />
+    <Content Include="Content\studearrings.jpg" />
+    <Content Include="Content\sunglasses.jpg" />
     <Content Include="Content\sweater.jpg" />
     <Content Include="Content\tshirt.jpg" />
+    <Content Include="Content\workheels.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
