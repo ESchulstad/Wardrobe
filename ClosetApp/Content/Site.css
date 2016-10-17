@@ -121,7 +121,7 @@ p a:hover{
     border-radius:25px;
     margin-top: 5px;
     margin-bottom:15px;
-    background-color:burlywood;
+    background-color:rgba(222,184,135,.75);
 }
 hr{
     border-color: rgb(179,255,179);
@@ -187,5 +187,49 @@ div.media img{
 }
 .accessorydetail {
     background-image: url('Images/glasses.jpeg');
+    background-size:cover;
+}
+div.form-actions.no-color a{
+    color:#ffd633;
+    font-family:'Amita',cursive;
+    font-size:20px;
+}
+div.form-actions.no-color a:hover{
+    color:#ff0066;
+}
+.deletetitle{
+    text-align:center;
+    font-family:'Sail',cursive;
+    font-size:30px;
+    color:rgb(179,255,179);
+}
+.deletedetail{
+    text-align:center;
+    font-family:'Sail','cursive';
+    font-size:20px;
+    color:#ff0066;
+}
+.deletebody {
+    background-image: url('Images/flyingclothes.jpeg');
+    background-size:cover;
+}
+.deletesure{
+    font-family:'Abril Fatfacce',cursive;
+    font-size:50px;
+    font-weight:bold;
+    color:#ff3333;
+}
+.form-control{
+    border: 1px solid #ff0066;
+}
+div a{
+    color:#ff0066;
+ font-weight:bold;  
+}
+div a:hover{
+    color:rgb(179,255,179);
+}
+.editpage {
+    background-image: url('Images/girlsun.jpeg');
     background-size:cover;
 }
