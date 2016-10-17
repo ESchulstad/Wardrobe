@@ -3,55 +3,49 @@
 @{
     ViewBag.Title = "Index";
 }
+<body class="itemsbody">
+    <h2 class="itemstitle">MY OUTFITS</h2>
 
-<h2>Index</h2>
+    <p>
+        @Html.ActionLink("CREATE A NEW OUTFIT", "Create")
+    </p>
+    
+    
+    <div class="row">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Accessory.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Bottom.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sho.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Top.Name)
-        </th>
-        <th></th>
-    </tr>
+        @foreach (var item in Model)
+        {
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Accessory.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Bottom.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sho.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Top.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
-        </td>
-    </tr>
-}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    
+                    <div class="caption">
+                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p>@Html.DisplayFor(modelItem => item.Top.Name)</p>
+                        
+                        <p>@Html.DisplayFor(modelItem => item.Bottom.Name)</p>
+                        <p>@Html.DisplayFor(modelItem => item.Sho.Name)</p>
+                        <p>@Html.DisplayFor(modelItem => item.Accessory.Name)</p>
+                        
+                        <p>
+                            @Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "btn btn-default" })
+                            @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }, new { @class = "btn btn-warning" })
+                            @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID }, new { @class = "btn btn-default" })
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            
 
-</table>
+           
+                   
+       
+
+        }
+
+    </div>
+
+
+
+</body>

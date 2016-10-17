@@ -56,6 +56,13 @@ textarea {
     color:#ff0066;
     background-color:rgb(179,255,179);
 }
+div a{
+    color:white;
+ font-weight:bold;  
+}
+div a:hover{
+    color:rgb(179,255,179);
+}
 .jumbotron{
     background:none;
     padding-right:0;
@@ -222,14 +229,24 @@ div.form-actions.no-color a:hover{
 .form-control{
     border: 1px solid #ff0066;
 }
-div a{
-    color:#ff0066;
- font-weight:bold;  
-}
-div a:hover{
-    color:rgb(179,255,179);
-}
+
 .editpage {
     background-image: url('Images/girlsun.jpeg');
     background-size:cover;
+}
+label.control-label.col-md-2{
+    color:rgb(179,255,179);
+}
+.profile {
+    background-image: url('Images/blackwhitegirl.jpeg');
+    background-size:cover;
+}
+.contact {
+    background-image: url('Images/maxresdefault.jpg');
+    background-size:cover;
+}
+.aboutdescription{
+    font-family:'Sail',cursive;
+    color:deeppink;
+    font-size:40px;
 }
