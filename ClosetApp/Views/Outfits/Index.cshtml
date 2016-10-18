@@ -20,19 +20,21 @@
                 <div class="thumbnail">
                     
                     <div class="caption">
-                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
-                        <p>@Html.DisplayFor(modelItem => item.Top.Name)</p>
-                        
-                        <p>@Html.DisplayFor(modelItem => item.Bottom.Name)</p>
-                        <p>@Html.DisplayFor(modelItem => item.Sho.Name)</p>
-                        <p>@Html.DisplayFor(modelItem => item.Accessory.Name)</p>
-                        
-                        <p>
-                            @Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "btn btn-default" })
-                            @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }, new { @class = "btn btn-warning" })
-                            @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID }, new { @class = "btn btn-default" })
-                        </p>
-                        
+                        <h3 class="outfitTitle">@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <div class="outfitItems">
+                            <p>@Html.DisplayFor(modelItem => item.Top.Name)</p>
+
+                            <p>@Html.DisplayFor(modelItem => item.Bottom.Name)</p>
+                            <p>@Html.DisplayFor(modelItem => item.Sho.Name)</p>
+                            <p>@Html.DisplayFor(modelItem => item.Accessory.Name)</p>
+                        </div>
+                        <div class="outfitBtns">
+                            <p>
+                                @Html.ActionLink("Details", "Details", new { id = item.OutfitID }, new { @class = "btn btn-default" })
+                                @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }, new { @class = "btn btn-warning" })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID }, new { @class = "btn btn-default" })
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

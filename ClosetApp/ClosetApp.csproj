@@ -215,11 +215,14 @@
     <Content Include="Content\brownhat.jpg" />
     <Content Include="Content\buttonuptop.jpg" />
     <Content Include="Content\goldheels.jpg" />
+    <Content Include="Content\Images\blackdress.jpeg" />
     <Content Include="Content\Images\blackwhitegirl.jpeg" />
     <Content Include="Content\Images\bootsbackground.jpg" />
     <Content Include="Content\Images\clothespicture.jpg" />
     <Content Include="Content\Images\flyingclothes.jpeg" />
+    <Content Include="Content\Images\girlonbike.jpeg" />
     <Content Include="Content\Images\girlsun.jpeg" />
+    <Content Include="Content\Images\girlwithrings.jpg" />
     <Content Include="Content\Images\glasses.jpeg" />
     <Content Include="Content\Images\maxresdefault.jpg" />
     <Content Include="Content\Images\sweaters.jpg" />

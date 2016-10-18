@@ -250,3 +250,32 @@ label.control-label.col-md-2{
     color:deeppink;
     font-size:40px;
 }
+.outfitTitle{
+    font-family:'Sail',cursive;
+    text-align:center;
+    color:#ffaa00;
+    font-size:35px;
+    font-weight:bold;
+}
+.outfitItems{
+    text-align:center;
+    font-family:'Sail',cursive;
+    color:#ff0066;
+    font-size:25px;
+    font-weight:bold;
+}
+.outfitBtns{
+    text-align:center;
+}
+.outfitEdit {
+    background-image: url('Images/girlonbike.jpeg');
+    background-size:cover;
+}
+.createBody {
+    background-image: url('Images/girlwithrings.jpg');
+    background-size:cover;
+}
+.detailOutfit {
+    background-image: url('Images/blackdress.jpeg');
+    background-size:cover;
+}

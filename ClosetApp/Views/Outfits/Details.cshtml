@@ -4,55 +4,64 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<body class="detailOutfit">
 
-<div>
-    <h4>Outfit</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    <h2 class="itemstitle">Details</h2>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+    <div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Accessory.Name)
-        </dt>
+        <hr />
+        <h2 class="itemstitle">@Html.DisplayFor(model => model.Name)</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/@Model.Top.Photo" alt="..." />
+                    <div class="caption">
+                        <h3 class="outfitTitle">@Html.DisplayFor(model => model.Top.Name)</h3>
 
-        <dd>
-            @Html.DisplayFor(model => model.Accessory.Name)
-        </dd>
+                    </div>
+                </div>
+            </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Bottom.Name)
-        </dt>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/@Model.Bottom.Photo" alt="..." />
+                    <div class="caption">
+                        <h3 class="outfitTitle">@Html.DisplayFor(model => model.Bottom.Name)</h3>
 
-        <dd>
-            @Html.DisplayFor(model => model.Bottom.Name)
-        </dd>
+                    </div>
+                </div>
+            </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Sho.Name)
-        </dt>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/@Model.Sho.Photo" alt="..." />
+                    <div class="caption">
+                        <h3 class="outfitTitle">@Html.DisplayFor(model => model.Sho.Name)</h3>
 
-        <dd>
-            @Html.DisplayFor(model => model.Sho.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Top.Name)
-        </dt>
+                    </div>
+                </div>
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Top.Name)
-        </dd>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="~/Content/@Model.Accessory.Photo" />
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+                    <div class="caption">
+                        <h3 class="outfitTitle">@Html.DisplayFor(model => model.Accessory.Name)</h3>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) 
+            <br/>
+            @Html.ActionLink("Back to List", "Index")
+        </p>
+
+    </div>
+</body>
