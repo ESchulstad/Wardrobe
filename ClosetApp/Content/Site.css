@@ -22,10 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
+/*Sets thumbnail image height*/
 .thumbnail > img{
     height:300px;
 }
-
+/*Changes links on navbar*/
 .navbar-inverse .navbar-nav > li >a{
     color:#ffffb3;
     border:solid;
@@ -36,38 +37,46 @@ textarea {
     font-weight:bold;
     
 }
+/*Changes navbar color*/
 .navbar-inverse{
     background:none;
     border-color:none;
     border-bottom:none;
 }
+/*changes hover for links on navbar*/
 .navbar-inverse .navbar-nav > li >a:hover{
     color:white;
     background-color:#ff0066;
     border:none;
 }
+/*changes brand name on navbar*/
 .navbar-inverse .navbar-brand{
     color:white;
     background-color:#ff0066;
     border-radius:50%;
     margin: 5px;
 }
+/*changes hover for brand name on navbar*/
 .navbar-inverse .navbar-brand:hover{
     color:#ff0066;
     background-color:rgb(179,255,179);
 }
+/*changes all links in a div*/
 div a{
     color:white;
  font-weight:bold;  
 }
+/*changes hover for all links in div*/
 div a:hover{
     color:rgb(179,255,179);
 }
+/*changes jumbotron on homepage*/
 .jumbotron{
     background:none;
     padding-right:0;
     padding-left:0;
 }
+/*main title on homepage*/
 h1.title{
     text-align:center;
     color:#ffcc00;
@@ -76,33 +85,41 @@ h1.title{
     font-weight:800;
     text-shadow:5px 5px #27190c;
 }
+/*background for homepage*/
 .homepage {
     background-image: url('Images/clothespicture.jpg');
     background-size:cover;
     
 }
+/*changes all h2 links (on homepage)*/
 h2 a{
     color:white;
     font-family:'Petit Formal Script',cursive;
     font-weight:800;
     font-size:43px;
 }
+/*hover for h2 links*/
 h2 a:hover{
     color:rgb(179,255,179)
 }
+/*Subtitle links on homepage*/
 .links{
     text-align:center;
 }
+/*color of words in footer*/
 .foot{
     color:#ff0066;
 }
+/*footer on each page*/
 footer{
     margin-top:50px;
 }
+/*body on each index page*/
 .itemsbody {
     background-image: url('Images/wood.jpg');
     background-size:cover;
 }
+/*Title on each page other than home*/
 .itemstitle{
     font-family:'Petit Formal Script','cursive';
     color:#ffaa00;
@@ -113,16 +130,19 @@ footer{
     margin-top:30px;
 
 }
+/*all links in a p*/
 p a{
     font-family:'Petit Formal Script',cursive;
     font-size:28px;
     color:#ffffb3;
     font-weight:bold;
 }
+/*hover for links in p*/
 p a:hover{
     color:#ff0066;
     text-decoration:none;
 }
+/*controls the thumbnails*/
 .thumbnail{
     border: solid rgb(179,255,179) 5px;
     border-radius:25px;
@@ -130,10 +150,12 @@ p a:hover{
     margin-bottom:15px;
     background-color:rgba(222,184,135,.75);
 }
+/*the solid lines on each page*/
 hr{
     border-color: rgb(179,255,179);
 
 }
+/*the name under each picture in a thumbnail*/
 .itemname{
     text-align:center;
     color:#ff0066;
@@ -141,32 +163,39 @@ hr{
     font-family:'Abril Fatface',cursive;
     padding-bottom:10px;
 }
+/*all default buttons*/
 .btn-default{
     background-color:#ff0066;
     border-color:#ff0066;
     color:white;
 }
+/*hover for default buttons*/
 .btn-default:hover{
     color:white;
     background-color:#e6005c;
     border-color:#e6005c;
 }
+/*aligns the buttons in each thumbnail*/
 .buttons{
     text-align:center;
 }
+/*background image for top detail page*/
 .topdetail {
     background-image: url('Images/sweaters.jpg');
     background-size:cover;
 }
+/*controls media layout on details page*/
 .media{
     background-color:rgba(198,140,83,.75);
     border-radius:25px;
 }
+/*for the images in the media layout*/
 div.media img{
     text-align:center;
     padding:20px;
     max-width:350px;
 }
+/*controls text in the media layout*/
 .media-body{
     text-align:center;
     font-family:'Amita','cursive';
@@ -174,6 +203,7 @@ div.media img{
     color:#ffffb3;
     font-size:25px;
 }
+/*for the heading name under picture in media */
 .media-heading{
     font-family:'Amita',cursive;
     font-weight:bold;
@@ -181,75 +211,91 @@ div.media img{
     padding:10px;
     color:#ff0066;
 }
+/*for the links underneath the media layout*/
 .bottombtn{
     padding-top:25px;
 }
+/*background image for shoe detail page*/
 .shoedetail {
     background-image: url('Images/bootsbackground.jpg');
     background-size:cover;
 }
+/*background image for bottom detail page*/
 .bottomdetail {
     background-image: url('Images/vintagepants.jpg');
     background-size:cover;
 }
+/*background image for accessory detail page*/
 .accessorydetail {
     background-image: url('Images/glasses.jpeg');
     background-size:cover;
 }
+/*for links on bottom of details pages*/
 div.form-actions.no-color a{
     color:#ffd633;
     font-family:'Amita',cursive;
     font-size:20px;
 }
+/*hover for links of bottom of details pages*/
 div.form-actions.no-color a:hover{
     color:#ff0066;
 }
+/*heading for delete thumbnail*/
 .deletetitle{
     text-align:center;
     font-family:'Sail',cursive;
     font-size:30px;
     color:rgb(179,255,179);
 }
+/*text under picture on delete thumbnail*/
 .deletedetail{
     text-align:center;
     font-family:'Sail','cursive';
     font-size:20px;
     color:#ff0066;
 }
+/*background for delete pages*/
 .deletebody {
     background-image: url('Images/flyingclothes.jpeg');
     background-size:cover;
 }
+/*Are you sure delete text*/
 .deletesure{
     font-family:'Abril Fatfacce',cursive;
     font-size:50px;
     font-weight:bold;
     color:#ff3333;
 }
+/*border on edit and create pages*/
 .form-control{
     border: 1px solid #ff0066;
 }
-
+/*background for edit pages*/
 .editpage {
     background-image: url('Images/girlsun.jpeg');
     background-size:cover;
 }
+/*titles for boxes on edit and create pages*/
 label.control-label.col-md-2{
     color:rgb(179,255,179);
 }
+/*background for profile page*/
 .profile {
     background-image: url('Images/blackwhitegirl.jpeg');
     background-size:cover;
 }
+/*background for contact page*/
 .contact {
     background-image: url('Images/maxresdefault.jpg');
     background-size:cover;
 }
+/*paragraph on profile page*/
 .aboutdescription{
     font-family:'Sail',cursive;
     color:deeppink;
     font-size:40px;
 }
+/*outfit heading in thumbnail*/
 .outfitTitle{
     font-family:'Sail',cursive;
     text-align:center;
@@ -257,6 +303,7 @@ label.control-label.col-md-2{
     font-size:35px;
     font-weight:bold;
 }
+/*outfit items*/
 .outfitItems{
     text-align:center;
     font-family:'Sail',cursive;
@@ -264,17 +311,21 @@ label.control-label.col-md-2{
     font-size:25px;
     font-weight:bold;
 }
+/*buttons in thumbnail for outfits*/
 .outfitBtns{
     text-align:center;
 }
+/*background image for outfit edit page*/
 .outfitEdit {
     background-image: url('Images/girlonbike.jpeg');
     background-size:cover;
 }
+/*background for create page for outfits*/
 .createBody {
     background-image: url('Images/girlwithrings.jpg');
     background-size:cover;
 }
+/*background for details page for outfits*/
 .detailOutfit {
     background-image: url('Images/blackdress.jpeg');
     background-size:cover;
