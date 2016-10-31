@@ -10,27 +10,28 @@
 
     <hr />
     <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="media">
-                <img class="image-responsive" src="~/Content/@Model.Photo" alt="A Top">
-
-                <div class="media-body">
-                    <h4 class="media-heading">@Html.DisplayFor(model => model.Name)</h4>
-                    <p>@Html.DisplayFor(model => model.Type)</p>
-                    <p>@Html.DisplayFor(model => model.Color)</p>
-                    <p>Occasion: @Html.DisplayFor(model => model.Occasion.OccasionName)</p>
-                    <p>Season: @Html.DisplayFor(model => model.Season.SeasonName)</p>
-                </div>
-            </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/Content/@Model.Photo" alt="A Bottom">
+                <div class="caption">
+                    <div class="media-body">
+                                        <h4 class="media-heading">@Html.DisplayFor(model => model.Name)</h4>
+                                        <p>@Html.DisplayFor(model => model.Type)</p>
+                                        <p>@Html.DisplayFor(model => model.Color)</p>
+                                        <p>Occasion: @Html.DisplayFor(model => model.Occasion.OccasionName)</p>
+                                        <p>Season: @Html.DisplayFor(model => model.Season.SeasonName)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         </div>
-    </div>
 
 
-    <p class="bottombtn">
-       @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })
-        <br />
-        @Html.ActionLink("Back to List", "Index")
-    </p>
+                        <p class="bottombtn">
+                            @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })
+                            <br />
+                            @Html.ActionLink("Back to List", "Index")
+                        </p>
 
 
 </body>

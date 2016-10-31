@@ -25,6 +25,8 @@ textarea {
 /*Sets thumbnail image height*/
 .thumbnail > img{
     height:300px;
+    border-radius:25px;
+    margin-top:25px;
 }
 /*Changes links on navbar*/
 .navbar-inverse .navbar-nav > li >a{
@@ -328,5 +330,10 @@ label.control-label.col-md-2{
 /*background for details page for outfits*/
 .detailOutfit {
     background-image: url('Images/blackdress.jpeg');
+    background-size:cover;
+}
+/*create page background*/
+.createItem {
+    background-image: url('Images/closet.jpeg');
     background-size:cover;
 }
